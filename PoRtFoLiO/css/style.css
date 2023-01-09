@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  color: #070707;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grey{
+  background-color: #F6F6F6;
+}
+.wrapper{
+  max-width:943px;
+  margin: auto;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1px solid #828282;
+  margin: 33px 0;
+}
+.header-item{
+  list-style-type: none;
+}
+.header-link{
+  color: #828282;
+  text-decoration: none;
+}
+.header-link:hover{
+  color: #070707;
+}
+.header-link.active{
+  color: #070707;
+}
+..menu-toggle{
+  display: none;
+}
+.content-header{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content-title{
+  font-size: 47px;
+  line-height: 59px;
+}
+.content-paragraph{
+  transform: translateX(-38%);
+}
+.content-paragraph-language{
+  text-align: center;
+  transform:translate(35px, -36px) rotate(-90deg); //браузеры без префексов
+}
+.content-paragraph-language-color{
+  color: #828282;
+}
+.content-photo{
+  background-image: url(../img/avatar2.jpg);
+  height: 390px;
+  background-size : cover;
+  background-position: 50% 50%;
+  margin-bottom: 104px;
+}
+.about{
+  padding:120px 0 90px;
+  background: #F6F6F6;
+  
+}
+.about, .scils{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-title,.skils-title,.portfolio-title,.contacts-title{
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+}
+.about-title{
+  margin-bottom: 17px;
+}
+.about-paragraph{
+  width: 55%;
+}
+.about-paragraph,.skils-paragraph{
+  text-align: center;
+  margin-bottom: 17px;
+}
+.skils{
+  padding: 91px 0px 110px 0px;
+}
+.skils-title{
+  margin-bottom: 69px;
+}
+.skils-paragraph{
+  margin-bottom: 83px;
+}
+.skils-images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.skils-image{
+  max-width: 90px;
+  max-height: 90px;
+}
+.portfolio{
+  padding-top:112px;
+  padding-bottom:96px
+}
+.portfolio-title{
+  margin-bottom: 47px;
+}
+.portfolio-img{
+  width: 100%;
+  max-height: 522px;
+  background-size: cover;
+  margin-bottom: 45px;
+}
+.portfolio-job{
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  margin-bottom: 99px;
+  display: block;
+  text-decoration: none;
+
+}
+.portfolio-job:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.contacts{
+  padding:114px 0 123px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.contacts-title{
+  margin-bottom: 20px;
+}
+.contacts-paragraph{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contacts-button{
+  width: 180px;
+  height: 42px;
+  background: #070707;
+  border-radius: 50px;
+  border:none;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 85px;
+  cursor:pointer;
+}
+.contacts-button:hover{
+  background-color: #828282;
+}
+.social-link{
+  text-decoration: none;
+  margin: 0px 30px;
+}
+.social-icon{
+  width: 40px;
+  height: 40px;
+}
+@media(max-width:1100px){
+  .wrapper{
+    width: 90%;
+  }
+  .content-title{
+    font-size: 35px;
+    line-height: normal;
+  }
+
+}
+@media(max-width:700px){
+  .content-header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .content-title{
+    margin-bottom: 23px;
+  }
+  .content-paragraph{
+    transform: translateX(0%);
+  }
+  .content-paragraph-language{
+    display: none;
+  }
+  .skils-image{
+    max-width: 60px;
+    max-height: 60px;
+  }
+@media(max-width:414px){
+  body{
+    padding-top:65px;
+  }
+  .header-nav{
+    display: none;
+  }
+  .header-nav.visible{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:250px;
+    padding:40px;
+    background: #F6F6F6;
+    border:1px solid #828282;
+    margin-top: 0;
+  }
+  .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 30px;
+    height: 20px;
+    transform: translateY(30px);
+  }
+  .menu-toggle span{
+    height: 2px;
+    width: 100%;
+    background-color: #070707;
+  }
+} 
+
+
